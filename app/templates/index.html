@@ -1,0 +1,16 @@
+<html>
+    <head>
+    <title>Jwitter</title>
+    <link rel="stylesheet" href="{{ url_for('static', 
+    filename='css/bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    </head>
+    <body>
+        <h1>Jwitter</h1>
+        {% if user %}
+        <p>Welcome to Jwitter, {{ user }}!</p>
+        {% else %}
+        <p>Welcome to Jwitter!</p>
+        {% endif %}
+    </body>
+</html>
